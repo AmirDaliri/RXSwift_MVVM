@@ -50,6 +50,8 @@
 		2964BA8C22D10C1900C1B282 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA8B22D10C1900C1B282 /* PostCell.swift */; };
 		2964BA8E22D10C2200C1B282 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA8D22D10C2200C1B282 /* CommentCell.swift */; };
 		2964BA9022D10C2900C1B282 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA8F22D10C2900C1B282 /* PhotoCell.swift */; };
+		29BF920922D10E5300E47092 /* CachedNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF920822D10E5300E47092 /* CachedNetworkServiceImpl.swift */; };
+		29BF920B22D10E8500E47092 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF920A22D10E8500E47092 /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		2964BA8B22D10C1900C1B282 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		2964BA8D22D10C2200C1B282 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		2964BA8F22D10C2900C1B282 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		29BF920822D10E5300E47092 /* CachedNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedNetworkServiceImpl.swift; sourceTree = "<group>"; };
+		29BF920A22D10E8500E47092 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,7 @@
 		2964BA5922D0B4A800C1B282 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				29BF920A22D10E8500E47092 /* Cache.swift */,
 				2964BA4C22D0B37200C1B282 /* Album.swift */,
 				2964BA4A22D0B35E00C1B282 /* Post.swift */,
 				2964BA7922D108BA00C1B282 /* Comment.swift */,
@@ -289,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				2964BA6D22D107A300C1B282 /* BasicNetworkService.swift */,
+				29BF920822D10E5300E47092 /* CachedNetworkServiceImpl.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 				2964BA1922D0A73900C1B282 /* RXSwift_MVVM.xcdatamodeld in Sources */,
 				2964BA6A22D1077100C1B282 /* AdvancedAction.swift in Sources */,
 				2964BA6622D1070300C1B282 /* APIAction.swift in Sources */,
+				29BF920B22D10E8500E47092 /* Cache.swift in Sources */,
 				2964BA4122D0B28700C1B282 /* MainControllerViewModel.swift in Sources */,
 				2964BA3F22D0B26100C1B282 /* MainController.swift in Sources */,
 				2964BA7422D1082000C1B282 /* CustomError.swift in Sources */,
@@ -427,6 +434,7 @@
 				2964BA8422D10B9500C1B282 /* CommentsControllerViewModel.swift in Sources */,
 				2964BA8022D10B3900C1B282 /* CommentsController.swift in Sources */,
 				2964BA7622D1084200C1B282 /* SingleItemResource.swift in Sources */,
+				29BF920922D10E5300E47092 /* CachedNetworkServiceImpl.swift in Sources */,
 				2964BA5322D0B41C00C1B282 /* Cacheable.swift in Sources */,
 				2964BA6222D0B96400C1B282 /* Coordinator.swift in Sources */,
 				2964BA4922D0B33900C1B282 /* PostCellViewModel.swift in Sources */,
