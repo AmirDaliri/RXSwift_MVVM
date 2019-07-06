@@ -30,6 +30,16 @@
 		2964BA5322D0B41C00C1B282 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA5222D0B41C00C1B282 /* Cacheable.swift */; };
 		2964BA6222D0B96400C1B282 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6022D0B96400C1B282 /* Coordinator.swift */; };
 		2964BA6322D0B96400C1B282 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6122D0B96400C1B282 /* AppCoordinator.swift */; };
+		2964BA6622D1070300C1B282 /* APIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6522D1070300C1B282 /* APIAction.swift */; };
+		2964BA6822D1071800C1B282 /* BasicAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6722D1071800C1B282 /* BasicAction.swift */; };
+		2964BA6A22D1077100C1B282 /* AdvancedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6922D1077100C1B282 /* AdvancedAction.swift */; };
+		2964BA6E22D107A300C1B282 /* BasicNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6D22D107A300C1B282 /* BasicNetworkService.swift */; };
+		2964BA7022D107E200C1B282 /* ArrayResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6F22D107E200C1B282 /* ArrayResource.swift */; };
+		2964BA7222D1081000C1B282 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA7122D1080F00C1B282 /* Utility.swift */; };
+		2964BA7422D1082000C1B282 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA7322D1082000C1B282 /* CustomError.swift */; };
+		2964BA7622D1084200C1B282 /* SingleItemResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA7522D1084200C1B282 /* SingleItemResource.swift */; };
+		2964BA7A22D108BA00C1B282 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA7922D108BA00C1B282 /* Comment.swift */; };
+		2964BA7C22D108C200C1B282 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA7B22D108C200C1B282 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +68,16 @@
 		2964BA5222D0B41C00C1B282 /* Cacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
 		2964BA6022D0B96400C1B282 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2964BA6122D0B96400C1B282 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2964BA6522D1070300C1B282 /* APIAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAction.swift; sourceTree = "<group>"; };
+		2964BA6722D1071800C1B282 /* BasicAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAction.swift; sourceTree = "<group>"; };
+		2964BA6922D1077100C1B282 /* AdvancedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedAction.swift; sourceTree = "<group>"; };
+		2964BA6D22D107A300C1B282 /* BasicNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNetworkService.swift; sourceTree = "<group>"; };
+		2964BA6F22D107E200C1B282 /* ArrayResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayResource.swift; sourceTree = "<group>"; };
+		2964BA7122D1080F00C1B282 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		2964BA7322D1082000C1B282 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		2964BA7522D1084200C1B282 /* SingleItemResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemResource.swift; sourceTree = "<group>"; };
+		2964BA7922D108BA00C1B282 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		2964BA7B22D108C200C1B282 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +122,7 @@
 				2964BA5422D0B43300C1B282 /* Protocols */,
 				2964BA6422D0B97300C1B282 /* Coordinator */,
 				2964BA5722D0B46600C1B282 /* ViewModel */,
+				2964BA6B22D1078600C1B282 /* Network */,
 				2964BA5922D0B4A800C1B282 /* Models */,
 				2964BA5822D0B49200C1B282 /* Controllers */,
 				2964BA3D22D0B21400C1B282 /* Supporting Files */,
@@ -181,6 +202,8 @@
 			children = (
 				2964BA4C22D0B37200C1B282 /* Album.swift */,
 				2964BA4A22D0B35E00C1B282 /* Post.swift */,
+				2964BA7922D108BA00C1B282 /* Comment.swift */,
+				2964BA7B22D108C200C1B282 /* Photo.swift */,
 				2964BA4422D0B2E400C1B282 /* FetchTarget.swift */,
 			);
 			path = Models;
@@ -191,6 +214,8 @@
 			children = (
 				2964BA1022D0A73900C1B282 /* AppDelegate.swift */,
 				2964BA4222D0B2BE00C1B282 /* Either.swift */,
+				2964BA7122D1080F00C1B282 /* Utility.swift */,
+				2964BA7322D1082000C1B282 /* CustomError.swift */,
 			);
 			path = "Main Supporting Model";
 			sourceTree = "<group>";
@@ -202,6 +227,43 @@
 				2964BA6022D0B96400C1B282 /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2964BA6B22D1078600C1B282 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2964BA6C22D1079300C1B282 /* Actions */,
+				2964BA7822D1087000C1B282 /* Services */,
+				2964BA7722D1085E00C1B282 /* Response Resource */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2964BA6C22D1079300C1B282 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				2964BA6522D1070300C1B282 /* APIAction.swift */,
+				2964BA6722D1071800C1B282 /* BasicAction.swift */,
+				2964BA6922D1077100C1B282 /* AdvancedAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		2964BA7722D1085E00C1B282 /* Response Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2964BA7522D1084200C1B282 /* SingleItemResource.swift */,
+				2964BA6F22D107E200C1B282 /* ArrayResource.swift */,
+			);
+			path = "Response Resource";
+			sourceTree = "<group>";
+		};
+		2964BA7822D1087000C1B282 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2964BA6D22D107A300C1B282 /* BasicNetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,16 +364,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				2964BA4722D0B30B00C1B282 /* AlbumCellViewModel.swift in Sources */,
+				2964BA6822D1071800C1B282 /* BasicAction.swift in Sources */,
 				2964BA1922D0A73900C1B282 /* RXSwift_MVVM.xcdatamodeld in Sources */,
+				2964BA6A22D1077100C1B282 /* AdvancedAction.swift in Sources */,
+				2964BA6622D1070300C1B282 /* APIAction.swift in Sources */,
 				2964BA4122D0B28700C1B282 /* MainControllerViewModel.swift in Sources */,
 				2964BA3F22D0B26100C1B282 /* MainController.swift in Sources */,
+				2964BA7422D1082000C1B282 /* CustomError.swift in Sources */,
 				2964BA4F22D0B3A000C1B282 /* NavigationDelegate.swift in Sources */,
+				2964BA7C22D108C200C1B282 /* Photo.swift in Sources */,
+				2964BA7622D1084200C1B282 /* SingleItemResource.swift in Sources */,
 				2964BA5322D0B41C00C1B282 /* Cacheable.swift in Sources */,
 				2964BA6222D0B96400C1B282 /* Coordinator.swift in Sources */,
 				2964BA4922D0B33900C1B282 /* PostCellViewModel.swift in Sources */,
 				2964BA1122D0A73900C1B282 /* AppDelegate.swift in Sources */,
+				2964BA6E22D107A300C1B282 /* BasicNetworkService.swift in Sources */,
+				2964BA7022D107E200C1B282 /* ArrayResource.swift in Sources */,
+				2964BA7222D1081000C1B282 /* Utility.swift in Sources */,
 				2964BA4B22D0B35E00C1B282 /* Post.swift in Sources */,
 				2964BA4322D0B2BE00C1B282 /* Either.swift in Sources */,
+				2964BA7A22D108BA00C1B282 /* Comment.swift in Sources */,
 				2964BA4522D0B2E400C1B282 /* FetchTarget.swift in Sources */,
 				2964BA6322D0B96400C1B282 /* AppCoordinator.swift in Sources */,
 				2964BA5122D0B3C000C1B282 /* NetworkService.swift in Sources */,
