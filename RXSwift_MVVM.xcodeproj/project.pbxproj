@@ -8,15 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2964BA1122D0A73900C1B282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA1022D0A73900C1B282 /* AppDelegate.swift */; };
-		2964BA1922D0A73900C1B282 /* RXSwift_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA1722D0A73900C1B282 /* RXSwift_MVVM.xcdatamodeld */; };
+		2964BA1922D0A73900C1B282 /* CacheModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA1722D0A73900C1B282 /* CacheModel.xcdatamodeld */; };
 		2964BA1B22D0A73A00C1B282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2964BA1A22D0A73A00C1B282 /* Assets.xcassets */; };
 		2964BA1E22D0A73A00C1B282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964BA1C22D0A73A00C1B282 /* LaunchScreen.storyboard */; };
-		2964BA3722D0AE2100C1B282 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964BA3122D0AE2100C1B282 /* RxAlamofire.framework */; };
-		2964BA3822D0AE2100C1B282 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964BA3222D0AE2100C1B282 /* Alamofire.framework */; };
-		2964BA3922D0AE2100C1B282 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964BA3322D0AE2100C1B282 /* SDWebImage.framework */; };
-		2964BA3A22D0AE2100C1B282 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964BA3422D0AE2100C1B282 /* RxSwift.framework */; };
-		2964BA3B22D0AE2100C1B282 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964BA3522D0AE2100C1B282 /* RxCocoa.framework */; };
-		2964BA3C22D0AE2100C1B282 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964BA3622D0AE2100C1B282 /* SnapKit.framework */; };
 		2964BA3F22D0B26100C1B282 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA3E22D0B26100C1B282 /* MainController.swift */; };
 		2964BA4122D0B28700C1B282 /* MainControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA4022D0B28700C1B282 /* MainControllerViewModel.swift */; };
 		2964BA4322D0B2BE00C1B282 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA4222D0B2BE00C1B282 /* Either.swift */; };
@@ -30,7 +24,6 @@
 		2964BA5322D0B41C00C1B282 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA5222D0B41C00C1B282 /* Cacheable.swift */; };
 		2964BA6222D0B96400C1B282 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6022D0B96400C1B282 /* Coordinator.swift */; };
 		2964BA6322D0B96400C1B282 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6122D0B96400C1B282 /* AppCoordinator.swift */; };
-		2964BA6622D1070300C1B282 /* APIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6522D1070300C1B282 /* APIAction.swift */; };
 		2964BA6822D1071800C1B282 /* BasicAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6722D1071800C1B282 /* BasicAction.swift */; };
 		2964BA6A22D1077100C1B282 /* AdvancedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6922D1077100C1B282 /* AdvancedAction.swift */; };
 		2964BA6E22D107A300C1B282 /* BasicNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6D22D107A300C1B282 /* BasicNetworkService.swift */; };
@@ -50,8 +43,16 @@
 		2964BA8C22D10C1900C1B282 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA8B22D10C1900C1B282 /* PostCell.swift */; };
 		2964BA8E22D10C2200C1B282 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA8D22D10C2200C1B282 /* CommentCell.swift */; };
 		2964BA9022D10C2900C1B282 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA8F22D10C2900C1B282 /* PhotoCell.swift */; };
+		29B912F722D11CD900871CC3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B912F122D11CD900871CC3 /* RxSwift.framework */; };
+		29B912F822D11CD900871CC3 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B912F222D11CD900871CC3 /* SnapKit.framework */; };
+		29B912F922D11CD900871CC3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B912F322D11CD900871CC3 /* RxCocoa.framework */; };
+		29B912FA22D11CD900871CC3 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B912F422D11CD900871CC3 /* RxAlamofire.framework */; };
+		29B912FB22D11CD900871CC3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B912F522D11CD900871CC3 /* Alamofire.framework */; };
+		29B912FC22D11CD900871CC3 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B912F622D11CD900871CC3 /* SDWebImage.framework */; };
 		29BF920922D10E5300E47092 /* CachedNetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF920822D10E5300E47092 /* CachedNetworkServiceImpl.swift */; };
 		29BF920B22D10E8500E47092 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF920A22D10E8500E47092 /* Cache.swift */; };
+		29BF920D22D10F2500E47092 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF920C22D10F2500E47092 /* CoreDataStack.swift */; };
+		29BF920F22D1109800E47092 /* APIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6522D1070300C1B282 /* APIAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,12 +62,6 @@
 		2964BA1A22D0A73A00C1B282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2964BA1D22D0A73A00C1B282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2964BA1F22D0A73A00C1B282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2964BA3122D0AE2100C1B282 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
-		2964BA3222D0AE2100C1B282 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		2964BA3322D0AE2100C1B282 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
-		2964BA3422D0AE2100C1B282 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		2964BA3522D0AE2100C1B282 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		2964BA3622D0AE2100C1B282 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		2964BA3E22D0B26100C1B282 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		2964BA4022D0B28700C1B282 /* MainControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControllerViewModel.swift; sourceTree = "<group>"; };
 		2964BA4222D0B2BE00C1B282 /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
@@ -100,8 +95,15 @@
 		2964BA8B22D10C1900C1B282 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		2964BA8D22D10C2200C1B282 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		2964BA8F22D10C2900C1B282 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		29B912F122D11CD900871CC3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		29B912F222D11CD900871CC3 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		29B912F322D11CD900871CC3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		29B912F422D11CD900871CC3 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
+		29B912F522D11CD900871CC3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		29B912F622D11CD900871CC3 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		29BF920822D10E5300E47092 /* CachedNetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedNetworkServiceImpl.swift; sourceTree = "<group>"; };
 		29BF920A22D10E8500E47092 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		29BF920C22D10F2500E47092 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +111,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2964BA3722D0AE2100C1B282 /* RxAlamofire.framework in Frameworks */,
-				2964BA3822D0AE2100C1B282 /* Alamofire.framework in Frameworks */,
-				2964BA3922D0AE2100C1B282 /* SDWebImage.framework in Frameworks */,
-				2964BA3A22D0AE2100C1B282 /* RxSwift.framework in Frameworks */,
-				2964BA3B22D0AE2100C1B282 /* RxCocoa.framework in Frameworks */,
-				2964BA3C22D0AE2100C1B282 /* SnapKit.framework in Frameworks */,
+				29B912F722D11CD900871CC3 /* RxSwift.framework in Frameworks */,
+				29B912F822D11CD900871CC3 /* SnapKit.framework in Frameworks */,
+				29B912F922D11CD900871CC3 /* RxCocoa.framework in Frameworks */,
+				29B912FA22D11CD900871CC3 /* RxAlamofire.framework in Frameworks */,
+				29B912FB22D11CD900871CC3 /* Alamofire.framework in Frameworks */,
+				29B912FC22D11CD900871CC3 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +143,7 @@
 		2964BA0F22D0A73900C1B282 /* RXSwift_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				2964BA1722D0A73900C1B282 /* RXSwift_MVVM.xcdatamodeld */,
+				2964BA1722D0A73900C1B282 /* CacheModel.xcdatamodeld */,
 				2964BA5A22D0B4FF00C1B282 /* Main Supporting Model */,
 				2964BA5422D0B43300C1B282 /* Protocols */,
 				2964BA6422D0B97300C1B282 /* Coordinator */,
@@ -158,12 +160,12 @@
 		2964BA2622D0A9BF00C1B282 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2964BA3222D0AE2100C1B282 /* Alamofire.framework */,
-				2964BA3122D0AE2100C1B282 /* RxAlamofire.framework */,
-				2964BA3522D0AE2100C1B282 /* RxCocoa.framework */,
-				2964BA3422D0AE2100C1B282 /* RxSwift.framework */,
-				2964BA3322D0AE2100C1B282 /* SDWebImage.framework */,
-				2964BA3622D0AE2100C1B282 /* SnapKit.framework */,
+				29B912F522D11CD900871CC3 /* Alamofire.framework */,
+				29B912F422D11CD900871CC3 /* RxAlamofire.framework */,
+				29B912F322D11CD900871CC3 /* RxCocoa.framework */,
+				29B912F122D11CD900871CC3 /* RxSwift.framework */,
+				29B912F622D11CD900871CC3 /* SDWebImage.framework */,
+				29B912F222D11CD900871CC3 /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,7 +233,7 @@
 		2964BA5922D0B4A800C1B282 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				29BF920A22D10E8500E47092 /* Cache.swift */,
+				29BF920E22D10FD500E47092 /* Core Data */,
 				2964BA4C22D0B37200C1B282 /* Album.swift */,
 				2964BA4A22D0B35E00C1B282 /* Post.swift */,
 				2964BA7922D108BA00C1B282 /* Comment.swift */,
@@ -318,6 +320,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		29BF920E22D10FD500E47092 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				29BF920A22D10E8500E47092 /* Cache.swift */,
+				29BF920C22D10F2500E47092 /* CoreDataStack.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,7 +339,7 @@
 				2964BA0922D0A73900C1B282 /* Sources */,
 				2964BA0A22D0A73900C1B282 /* Frameworks */,
 				2964BA0B22D0A73900C1B282 /* Resources */,
-				2964BA2522D0A94E00C1B282 /* ShellScript */,
+				29BF923322D115F200E47092 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -385,7 +396,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2964BA2522D0A94E00C1B282 /* ShellScript */ = {
+		29BF923322D115F200E47092 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,11 +405,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -417,9 +428,9 @@
 			files = (
 				2964BA4722D0B30B00C1B282 /* AlbumCellViewModel.swift in Sources */,
 				2964BA6822D1071800C1B282 /* BasicAction.swift in Sources */,
-				2964BA1922D0A73900C1B282 /* RXSwift_MVVM.xcdatamodeld in Sources */,
+				29BF920F22D1109800E47092 /* APIAction.swift in Sources */,
+				2964BA1922D0A73900C1B282 /* CacheModel.xcdatamodeld in Sources */,
 				2964BA6A22D1077100C1B282 /* AdvancedAction.swift in Sources */,
-				2964BA6622D1070300C1B282 /* APIAction.swift in Sources */,
 				29BF920B22D10E8500E47092 /* Cache.swift in Sources */,
 				2964BA4122D0B28700C1B282 /* MainControllerViewModel.swift in Sources */,
 				2964BA3F22D0B26100C1B282 /* MainController.swift in Sources */,
@@ -442,6 +453,7 @@
 				2964BA1122D0A73900C1B282 /* AppDelegate.swift in Sources */,
 				2964BA6E22D107A300C1B282 /* BasicNetworkService.swift in Sources */,
 				2964BA7022D107E200C1B282 /* ArrayResource.swift in Sources */,
+				29BF920D22D10F2500E47092 /* CoreDataStack.swift in Sources */,
 				2964BA8222D10B7700C1B282 /* PhotosControllerViewModel.swift in Sources */,
 				2964BA7222D1081000C1B282 /* Utility.swift in Sources */,
 				2964BA4B22D0B35E00C1B282 /* Post.swift in Sources */,
@@ -596,10 +608,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/RXSwift_MVVM/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.rxswift.mvvm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -618,10 +627,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/RXSwift_MVVM/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.rxswift.mvvm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -653,13 +659,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2964BA1722D0A73900C1B282 /* RXSwift_MVVM.xcdatamodeld */ = {
+		2964BA1722D0A73900C1B282 /* CacheModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				2964BA1822D0A73900C1B282 /* RXSwift_MVVM.xcdatamodel */,
 			);
 			currentVersion = 2964BA1822D0A73900C1B282 /* RXSwift_MVVM.xcdatamodel */;
-			path = RXSwift_MVVM.xcdatamodeld;
+			path = CacheModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

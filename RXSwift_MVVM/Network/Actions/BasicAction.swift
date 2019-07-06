@@ -30,7 +30,7 @@ enum BasicAction: APIAction {
     }
     
     func asURLRequest() throws -> URLRequest {
-        let originalRequest = try URLRequest(url: baseURL.appending(path), method: method, headers: authHeader)
+        let originalRequest = try URLRequest(url: baseURL.appending(path), method: method, headers: [:])
         let encodedRequest = try encoding.encode(originalRequest, with: actionParameters)
         return encodedRequest
     }

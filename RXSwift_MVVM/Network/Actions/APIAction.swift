@@ -6,7 +6,6 @@
 //  Copyright © 2019 AmirDaliri. All rights reserved.
 //
 
-import Foundation
 import Alamofire
 
 protocol APIAction: URLRequestConvertible {

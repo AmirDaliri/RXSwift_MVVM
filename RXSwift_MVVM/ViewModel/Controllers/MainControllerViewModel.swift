@@ -21,6 +21,14 @@ final class MainControllerViewModel: MainControllerViewModelType {
     // MARK: Init and deinit
     init(_ service: NetworkService, navigationDelegate: NavigationDelegate) {
         self.service = service
+        
+        modeSelectedSubject
+            .bind(onNext: targetSelected)
+            .disposed(by: disposeBag)
+        
+        viewModelSelectedSubject
+            .bind(onNext: navigationDelegate.viewModelSelected)
+            .disposed(by: disposeBag)
     }
     deinit {
         print("\(self) dealloc")
@@ -38,5 +46,24 @@ final class MainControllerViewModel: MainControllerViewModelType {
         return dataSubject.asDriver(onErrorJustReturn: [])
     }
     
+    // MARK: Functions
+    func targetSelected(_ target: FetchTarget) {
+        switch target {
+        case .albums:
+            service
+                .load(ArrayResource<Album>(action: BasicAction.albums))
+                .map { $0.map(AlbumCellViewModel.init) }
+                .map { item in return item.map(Either<AlbumCellViewModelType, PostCellViewModelType>.left) }
+                .subscribe(dataSubject)
+                .disposed(by: disposeBag)
+            
+        case .posts:
+            service
+                .load(ArrayResource<Post>(action: BasicAction.posts))
+                .map { $0.map(PostCellViewModel.init) }
+                .map { item in return item.map(Either<AlbumCellViewModelType, PostCellViewModelType>.right) }
+                .subscribe(dataSubject)
+                .disposed(by: disposeBag)
+        }
+    }
 }
-

@@ -33,7 +33,7 @@ enum AdvancedAction: APIAction {
     func asURLRequest() throws -> URLRequest {
         let originalRequest = try URLRequest(url: baseURL.appending(path),
                                              method: method,
-                                             headers: authHeader)
+                                             headers: [:])
         let encodedRequest = try encoding.encode(originalRequest,
                                                  with: actionParameters)
         return encodedRequest

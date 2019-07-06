@@ -21,6 +21,12 @@ struct CachedNetworkServiceImpl: NetworkService {
     func load<T>(_ resource: SingleItemResource<T>) -> Observable<T> where T : Codable {
         return Observable.create { observer in
             
+            // TODO: Implement valid cache interaction like in ArrayResource' load method
+            
+            if let cached = self.cache.loadData(for: resource) {
+                observer.onNext(cached)
+            }
+            
             self.networkService
                 .load(resource)
                 .subscribe(observer)
@@ -32,6 +38,9 @@ struct CachedNetworkServiceImpl: NetworkService {
     
     func load<T>(_ resource: ArrayResource<T>) -> Observable<[T]> where T : Codable {
         return Observable.create { observer in
+            
+            let cached = self.cache.loadData(for: resource)
+            observer.onNext(cached)
             
             let requestResultObservable = self.networkService.load(resource)
             
@@ -47,7 +56,8 @@ struct CachedNetworkServiceImpl: NetworkService {
             requestResultObservable
                 .map(JSONEncoder().encode)
                 .map { ($0, resource) }
-                .subscribe({ (pair) in
+                .subscribe(onNext: { (pair) in
+                    self.cache.save(pair.0, for: pair.1)
                 })
                 .disposed(by: self.disposeBag)
             
@@ -55,4 +65,3 @@ struct CachedNetworkServiceImpl: NetworkService {
         }
     }
 }
-
