@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import RxSwift
 import RxCocoa
+import RxSwift
 
 protocol PhotosControllerViewModelType {
     var viewModelsDriver: Driver<[PhotoCellViewModelType]> { get }

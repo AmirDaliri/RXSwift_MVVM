@@ -9,6 +9,6 @@
 import RxSwift
 
 protocol NetworkService {
-//    func load<T>(_ resource: SingleItemResource<T>) -> Observable<T>
-//    func load<T>(_ resource: ArrayResource<T>) -> Observable<[T]>
+    func load<T>(_ resource: SingleItemResource<T>) -> Observable<T>
+    func load<T>(_ resource: ArrayResource<T>) -> Observable<[T]>
 }
