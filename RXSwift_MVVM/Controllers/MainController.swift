@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainController.swift
 //  RXSwift_MVVM
 //
 //  Created by Amir Daliri on 6.07.2019.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainController: UIViewController {
+
 
     // MARK: - Lifecycle Methods
     
@@ -18,6 +19,4 @@ class ViewController: UIViewController {
         // I'm Here...
     }
 
-
 }
-
