@@ -28,6 +28,8 @@
 		2964BA4F22D0B3A000C1B282 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA4E22D0B3A000C1B282 /* NavigationDelegate.swift */; };
 		2964BA5122D0B3C000C1B282 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA5022D0B3C000C1B282 /* NetworkService.swift */; };
 		2964BA5322D0B41C00C1B282 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA5222D0B41C00C1B282 /* Cacheable.swift */; };
+		2964BA6222D0B96400C1B282 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6022D0B96400C1B282 /* Coordinator.swift */; };
+		2964BA6322D0B96400C1B282 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964BA6122D0B96400C1B282 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		2964BA4E22D0B3A000C1B282 /* NavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
 		2964BA5022D0B3C000C1B282 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2964BA5222D0B41C00C1B282 /* Cacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
+		2964BA6022D0B96400C1B282 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2964BA6122D0B96400C1B282 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				2964BA1722D0A73900C1B282 /* RXSwift_MVVM.xcdatamodeld */,
 				2964BA5A22D0B4FF00C1B282 /* Main Supporting Model */,
 				2964BA5422D0B43300C1B282 /* Protocols */,
+				2964BA6422D0B97300C1B282 /* Coordinator */,
 				2964BA5722D0B46600C1B282 /* ViewModel */,
 				2964BA5922D0B4A800C1B282 /* Models */,
 				2964BA5822D0B49200C1B282 /* Controllers */,
@@ -188,6 +193,15 @@
 				2964BA4222D0B2BE00C1B282 /* Either.swift */,
 			);
 			path = "Main Supporting Model";
+			sourceTree = "<group>";
+		};
+		2964BA6422D0B97300C1B282 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2964BA6122D0B96400C1B282 /* AppCoordinator.swift */,
+				2964BA6022D0B96400C1B282 /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,11 +307,13 @@
 				2964BA3F22D0B26100C1B282 /* MainController.swift in Sources */,
 				2964BA4F22D0B3A000C1B282 /* NavigationDelegate.swift in Sources */,
 				2964BA5322D0B41C00C1B282 /* Cacheable.swift in Sources */,
+				2964BA6222D0B96400C1B282 /* Coordinator.swift in Sources */,
 				2964BA4922D0B33900C1B282 /* PostCellViewModel.swift in Sources */,
 				2964BA1122D0A73900C1B282 /* AppDelegate.swift in Sources */,
 				2964BA4B22D0B35E00C1B282 /* Post.swift in Sources */,
 				2964BA4322D0B2BE00C1B282 /* Either.swift in Sources */,
 				2964BA4522D0B2E400C1B282 /* FetchTarget.swift in Sources */,
+				2964BA6322D0B96400C1B282 /* AppCoordinator.swift in Sources */,
 				2964BA5122D0B3C000C1B282 /* NetworkService.swift in Sources */,
 				2964BA4D22D0B37200C1B282 /* Album.swift in Sources */,
 			);
